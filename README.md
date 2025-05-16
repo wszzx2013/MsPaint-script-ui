@@ -85,7 +85,7 @@ The Window is the main container for your UI. You can create one using `Library:
 Tabs are the primary way to organize content in your UI. You can add them with `Window:AddTab()`.
 
 ```lua
-local MainTab = Window:AddTab("Main", "home") -- Second parameter is the icon name (optional)
+local Tab = Window:AddTab("Main", "home") -- Second parameter is the icon name (optional)
 ```
 
 #### Methods
@@ -101,8 +101,8 @@ local MainTab = Window:AddTab("Main", "home") -- Second parameter is the icon na
 Groupboxes are containers for UI elements within tabs. They help organize elements into sections.
 
 ```lua
-local LeftGroupbox = MainTab:AddLeftGroupbox("Settings")
-local RightGroupbox = MainTab:AddRightGroupbox("Information")
+local LeftGroupbox = Tab:AddLeftGroupbox("Settings")
+local RightGroupbox = Tab:AddRightGroupbox("Information")
 ```
 
 #### Methods
@@ -118,7 +118,7 @@ local RightGroupbox = MainTab:AddRightGroupbox("Information")
 Tabboxes are containers that can have their own tabs, useful for organizing related options.
 
 ```lua
-local Tabbox = MainTab:AddLeftTabbox("Settings")
+local Tabbox = Tab:AddLeftTabbox("Settings")
 local Tab1 = Tabbox:AddTab("General")
 local Tab2 = Tabbox:AddTab("Advanced")
 ```
