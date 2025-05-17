@@ -101,8 +101,8 @@ local Tab = Window:AddTab("Main", "home") -- Second parameter is the icon name (
 Groupboxes are containers for UI elements within tabs. They help organize elements into sections.
 
 ```lua
-local LeftGroupbox = Tab:AddLeftGroupbox("Settings")
-local RightGroupbox = Tab:AddRightGroupbox("Information")
+local Groupbox1 = Tab:AddLeftGroupbox("Settings")
+local Groupbox2 = Tab:AddRightGroupbox("Information")
 ```
 
 #### Methods
